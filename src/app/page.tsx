@@ -1,9 +1,12 @@
+import Button, { ButtonTwo } from '@/projectcomponet/Button'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='bg-blue-700 p-20'>
+    <div className='p-20'>
       Hello Universe
+      <Button />
+      <ButtonTwo />
     </div>
   )
 }

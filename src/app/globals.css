@@ -2,6 +2,124 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root{
+  background-color: #F5F5FF;
+}
+
+.nav{
+  color: #3C3C3C;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav:hover{
+  color: white;
+  background-color: #0038FF;
+  display: flex;
+  width: 112px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 10;
+  flex-shrink: 0;
+}
+
+.homeh{
+  color: #000;
+  font-family: "Sansita Swashed";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%; /* 50px */
+}
+
+.homeir{
+
+}
+
+.homep{
+  color: #2E2E2E;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+}
+
+.headings{
+  color: #000;
+font-family: "Sansita Swashed";
+font-size: 70px;
+font-style: normal;
+font-weight: 800;
+line-height: 100%; /* 70px */
+}
+
+
+.cardimg {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background-color: lightgray;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.price{
+  color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 15px */
+display: flex;
+width: 100px;
+height: 25px;
+padding: 5px 13px;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.50) 290.5%, rgba(255, 255, 255, 0.50) 290.5%);
+backdrop-filter: blur(2px);
+}
+
+.cardheading{
+  color: #000;
+font-family: "Sansita Swashed";
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: 100%; /* 20px */
+}
+
+.cardes{
+  color: #222;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 15px */
+}
+
+.paintinginfo{
+  color: #222;
+font-family: "Cormorant Upright";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 15px */
+}
+
+
+
+
+/* 
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -66,4 +184,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
