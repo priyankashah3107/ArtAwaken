@@ -13,19 +13,33 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  /* line-height: normal; */
+   /* width: 112px;  */
+  /* height: 36px;  */
 }
 
 .nav:hover{
   color: white;
   background-color: #0038FF;
   display: flex;
-  width: 112px;
-  height: 36px;
+  /* width: 112px;  */
+  /* height: 60px;  */
   align-items: center;
   justify-content: center;
   gap: 10;
-  flex-shrink: 0;
+  
+  border-radius: 33px;
+  transition: all 0.3s ease; 
+} 
+
+
+.mainav{
+  color: #000;
+font-family: "Sansita Swashed";
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 25px */
 }
 
 .homeh{

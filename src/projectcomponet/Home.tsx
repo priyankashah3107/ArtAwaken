@@ -1,9 +1,22 @@
 "use client";
 import React from 'react'
+import MainNav from './MainNav';
+import Navbar from './Navbar';
+import HomeCarousel from './HomeCarousel';
 
 const Home = () => {
   return (
-    <div>Home</div>
+     <>
+     <div>
+      <MainNav />
+      <Navbar />
+
+      <div>
+        <div>1</div>
+         <div><HomeCarousel /></div>
+      </div>
+     </div>
+     </>
   )
 }
 
