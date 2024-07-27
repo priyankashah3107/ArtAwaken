@@ -2,7 +2,7 @@
 import React from 'react'
 import MainNav from './MainNav';
 import Navbar from './Navbar';
-import HomeCarousel from './HomeCarousel';
+import {HomeCarousel} from './HomeCarousel';
 
 const Home = () => {
   return (
