@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Sansita_Swashed } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const sansita_swashed = Sansita_Swashed({subsets:["latin"], weight: "300",})
 
 export const metadata: Metadata = {
   title: "Art Awaken",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={sansita_swashed.className}>{children}</body>
     </html>
   );
 }
