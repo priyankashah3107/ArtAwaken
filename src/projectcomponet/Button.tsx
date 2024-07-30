@@ -21,7 +21,7 @@ interface ButtonTwoProps {
 export const ButtonTwo: React.FC<ButtonTwoProps> = ({ value }) => {
   return (
     <div className="">
-      <button className="px-8 py-2 text-xl font-bold font-[] leading-loose rounded-3xl  bg-white text-black w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+      <button className="lg:px-8  lg:py-2 text-[8px] lg:text-xl font-bold  lg:leading-loose rounded-xl lg:rounded-3xl  bg-white text-black w-20 h-6 lg:h-14  lg:w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
         {value}
       </button>
     </div>

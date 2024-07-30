@@ -18,6 +18,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  cursor: pointer;
   /* line-height: normal; */
    /* width: 112px;  */
   /* height: 36px;  */
@@ -32,7 +33,7 @@
   align-items: center;
   justify-content: center;
   gap: 10;
-  
+  cursor: pointer;
   border-radius: 33px;
   transition: all 0.3s ease; 
 } 
@@ -45,6 +46,7 @@ font-size: 25px;
 font-style: normal;
 font-weight: 500;
 line-height: 100%; /* 25px */
+cursor: pointer;
 }
 
 .homeh{
@@ -114,7 +116,7 @@ backdrop-filter: blur(2px);
 
 .cardheading{
   color: #000;
-font-family: "Sansita Swashed";
+/* font-family: "Sansita Swashed"; */
 font-size: 20px;
 font-style: normal;
 font-weight: 800;
@@ -123,7 +125,7 @@ line-height: 100%; /* 20px */
 
 .cardes{
   color: #222;
-font-family: Inter;
+/* font-family: Inter; */
 font-size: 15px;
 font-style: normal;
 font-weight: 500;
@@ -132,7 +134,7 @@ line-height: 100%; /* 15px */
 
 .paintinginfo{
   color: #222;
-font-family: "Cormorant Upright";
+/* font-family: "Cormorant Upright"; */
 font-size: 15px;
 font-style: normal;
 font-weight: 400;

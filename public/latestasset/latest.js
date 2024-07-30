@@ -1,4 +1,4 @@
-import ButtonTwo from "../../src/projectcomponet/Button"
+import { ButtonTwo } from "../../src/projectcomponet/Button"
 const latestwork = [
   { 
     id: 1,
@@ -92,7 +92,7 @@ const latestwork = [
   },
   { 
     id: 11,
-    img: "/latestasset/shiv.png",
+    img: "/latestasset/nature.png",
     price: "₹ 20k",
     tit: "Forest Lake LandScape  ",
     name: "Priyanka",
