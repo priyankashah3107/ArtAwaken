@@ -39,7 +39,7 @@ const populararts = [
   },
   { 
     id: 5,
-    img: "/popular/bhuuda.png",
+    img: "/popular/bhudda.png",
     price: "₹ 20k",
     tit: "Meditation",
     name: "Shiva",
@@ -48,7 +48,7 @@ const populararts = [
   },
   { 
     id: 6,
-    img: "/featured/haven.png",
+    img: "/popular/haven.png",
     price: "₹ 20k",
     tit: "Earth",
     name: "Universe",
@@ -58,4 +58,4 @@ const populararts = [
  
 ]
 
-export default featurecard;
+export default populararts;

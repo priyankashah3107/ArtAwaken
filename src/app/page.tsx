@@ -2,6 +2,7 @@
 import { FeaturedArtist } from '@/projectcomponet/FeaturedArtist'
 import Home from '@/projectcomponet/Home'
 import LatestWork from '@/projectcomponet/LatestWork'
+import { PopularWork } from '@/projectcomponet/PopularWork'
 import React from 'react'
 
 const page = () => {
@@ -10,6 +11,7 @@ const page = () => {
       <Home />
       <LatestWork />
       <FeaturedArtist />
+      <PopularWork />
     </div>
   )
 }
