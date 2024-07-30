@@ -27,3 +27,16 @@ export const ButtonTwo: React.FC<ButtonTwoProps> = ({ value }) => {
     </div>
   );
 };
+
+
+interface ButtonThreeProps {
+  value: string,
+}
+
+export const ButtonThree: React.FC<ButtonThreeProps> = ({value}) => {
+  return (
+    <>
+    <button className='btnn'>{value}</button>
+    </>
+  )
+}
