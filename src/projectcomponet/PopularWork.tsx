@@ -21,7 +21,7 @@ export function PopularWork() {
     <h1 className="text-black ml-44 lg:ml-0 w-full text-center text-[45px] lg:text-[70px] font-extrabold leading-tight lg:leading-[70px] mt-24">
     Popular Word
       </h1>
-      <Carousel plugins={[Autoplay({delay: 3000})]}
+      <Carousel plugins={[Autoplay({delay: 7000})]}
       className="w-full ml-60 md:ml-44 lg:ml-96 lg:w-1/2 mt-20 gap-4">
       <CarouselContent className=" ">
         {populararts.map((val, index) => (
