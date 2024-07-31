@@ -1,17 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
-
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 
 
 :root{
