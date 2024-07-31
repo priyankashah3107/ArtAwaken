@@ -22,21 +22,21 @@ export function PopularWork() {
     Popular Word
       </h1>
       <Carousel plugins={[Autoplay({delay: 7000})]}
-      className="w-full ml-60 md:ml-44 lg:ml-96 lg:w-1/2 mt-20 gap-4">
-      <CarouselContent className=" ">
+      className="w-full ml-64 mt-20 md:ml-44 md:mt-20  lg:pl-52 lg:-ml-20 lg:mt-20 ">
+      <CarouselContent className="lg:w-full">
         {populararts.map((val, index) => (
           <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3 ">
           <div className="p-2">
             
           <div className='relative'>
-              <Image src={val.img} alt="img" width={300} height={300} className=' rounded-lg mb-4 cardimg cursor-pointer ' />
+              <Image src={val.img} alt="img" width={400} height={300} className=' rounded-lg mb-4 cardimg cursor-pointer ' />
               <p className="w-[90px] h-[26px]  py-0.5  bg-gradient-to-r from-white to-white  backdrop-blur-md opacity-70 rounded-xl justify-center items-start gap-2 inline-flex text-[15px] font-normal text-black  mb-2 ml-2 font-inter absolute left-0 bottom-0 ">{val.price}</p>
               </div>
             <Card>
-              <CardContent className="flex  lg:items-center lg:justify-center p-6">
+              <CardContent className="flex items-start justify-start p-4">
                  <div className="flex flex-col gap-3 cursor-pointer">
                   <h1 className="cardheading">{val.tit}</h1>
-                  <div className="flex flex-row gap-14">
+                  <div className="flex flex-row  gap-14">
                     <p className="cardes font-inter">{val.name}</p>
                     <div>{val.buy}</div>
                   </div>
@@ -49,8 +49,8 @@ export function PopularWork() {
         ))}
       </CarouselContent>
 
-      <CarouselPrevious className=""/>
-      <CarouselNext className="" />
+      {/* <CarouselPrevious className=""/>
+      <CarouselNext className="" /> */}
     </Carousel>
     </>
   )

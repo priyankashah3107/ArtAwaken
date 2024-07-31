@@ -74,8 +74,8 @@ const artcat = [
 const Footer = () => {
   return (
     <>
-    <div className='  mt-32 ml-60 md:ml-44 lg:p-20 '>
-      <div className='grid  grid-cols-2 lg:grid-cols-4 gap-20'>
+    <div className=' grid  grid-cols-2 lg:grid-cols-4 bg-[#f9f1f9] mt-32 ml-60 md:ml-44 lg:p-20 '>
+      <div className=''>
         {foo1.map((val, idx) => (
           <div key={idx}>
             <h1>{val.name}</h1>
