@@ -22,6 +22,7 @@ const config = {
         'sansita': ['"Sansita Swashed"', 'cursive'],
         'cormorant': ['"Cormorant Upright"', 'serif'],
         'inter': ['Inter', 'sans-serif'],
+        'rubik-wet-paint': ['"Rubik Wet Paint"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",

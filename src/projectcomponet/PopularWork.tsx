@@ -19,7 +19,7 @@ export function PopularWork() {
   return (
     <>
     <h1 className="text-black ml-44 lg:ml-0 w-full text-center text-[45px] lg:text-[70px] font-extrabold leading-tight lg:leading-[70px] mt-24">
-    Popular Word
+    Popular Work
       </h1>
       <Carousel plugins={[Autoplay({delay: 7000})]}
       className="w-full ml-64 mt-20 md:ml-44 md:mt-20  lg:pl-52 lg:-ml-20 lg:mt-20 ">
@@ -29,7 +29,7 @@ export function PopularWork() {
           <div className="p-2">
             
           <div className='relative'>
-              <Image src={val.img} alt="img" width={400} height={300} className=' rounded-lg mb-4 cardimg cursor-pointer ' />
+              <Image src={val.img} alt="img" width={400} height={300} className=' rounded-lg mb-4 cardimg cursor-pointer h-auto w-auto' />
               <p className="w-[90px] h-[26px]  py-0.5  bg-gradient-to-r from-white to-white  backdrop-blur-md opacity-70 rounded-xl justify-center items-start gap-2 inline-flex text-[15px] font-normal text-black  mb-2 ml-2 font-inter absolute left-0 bottom-0 ">{val.price}</p>
               </div>
             <Card>

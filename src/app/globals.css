@@ -1,15 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 
 :root{
   background-color: #F5F5FF;
+  height: 100%;
+  width: 100%;
 }
 
 .nav{
@@ -160,9 +168,45 @@ font-weight: 500;
 line-height: 100%; /* 12px */
 }
 
+.fooh{
+  color: #000;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 35px */
+cursor: pointer;
+}
 
+.foop{
+  color: #0E0E0E;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 25px */
+cursor: pointer;
+}
 
+.art{
+  color: #000;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 20px */
+}
 
+.artd{
+  color: #000;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 20px */
+cursor: pointer;
+}
+
+.artd:hover{
+  color: #0038FF;
+  cursor: pointer;
+}
 
 /* 
 @layer base {

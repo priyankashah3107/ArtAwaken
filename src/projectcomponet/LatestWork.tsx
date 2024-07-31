@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const LatestWork = () => {
   return (
-    <div className='mt-20 px-4 flex flex-col justify-center items-center -mr-44 lg:-mr-0'>
+    <div className='mt-20 px-4 flex flex-col justify-center items-center -mr-52 lg:-mr-0'>
       <h1 className="text-black text-center text-[45px] lg:text-[70px] font-extrabold leading-tight lg:leading-[70px]">
         Latest Work
       </h1>

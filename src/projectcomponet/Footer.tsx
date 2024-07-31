@@ -73,40 +73,46 @@ const artcat = [
 
 const Footer = () => {
   return (
-    <>
-    <div className=' grid  grid-cols-2 lg:grid-cols-4 bg-[#f9f1f9] mt-32 ml-60 md:ml-44 lg:p-20 '>
-      <div className=''>
-        {foo1.map((val, idx) => (
-          <div key={idx}>
-            <h1>{val.name}</h1>
-            <p>{val.desc}</p>
-          </div>
-        ))}
+     <>
+     <footer className=' mt-32 pl-60  -mr-96 lg:-mr-0 gap-20 md:pl-64 md:gap-20 lg:p-20 lg:pl-32 grid grid-cols-2 lg:grid-cols-4 lg:gap-20'>
+         <div className='mt-14'>
+          {foo1.map((val, idx) => (
+            <div key={idx} className='flex flex-col gap-6'>
+              <h1 className='fooh font-rubik-wet-paint'>{val.name}</h1>
+              <p className='foop font-cormorant '>{val.desc}</p>
+            </div>
+          ))}
+         </div>
 
-        <div>
-          <h1>ART CATEGORY</h1>
+         <div className='flex flex-col gap-4 mt-16'>
+         <h3 className='art font-inter '>ART CATEGORY</h3>
           {category.map((val, idx) => (
-             <p key={idx}>{val.cat}</p>
+            <div key={idx} >
+              <p className=' artd font-cormorant ' >{val.cat}</p>
+            </div>
           ))}
-        </div>
+         </div>
+        
 
-        <div>
-          <h1>ARTISTS</h1>
+         <div className='flex flex-col gap-4 mt-16'>
+         <h3 className='art font-inter'>ARTISTS</h3>
           {artist.map((val, idx) => (
-             <p key={idx}>{val.cat}</p>
+            <div key={idx} >
+              <p className=' artd font-cormorant' >{val.cat}</p>
+            </div>
           ))}
-        </div>
+         </div>
 
-        <div>
-          <h1>ART CATEGORY</h1>
+         <div className='flex flex-col gap-4 mt-16'>
+         <h3 className='art font-inter'>About Us</h3>
           {artcat.map((val, idx) => (
-             <p key={idx}>{val.cat}</p>
+            <div key={idx} >
+              <p className=' artd font-cormorant' >{val.cat}</p>
+            </div>
           ))}
-        </div>
-
-      </div>
-    </div>
-    </>
+         </div>
+     </footer>
+     </>
   )
 }
 
