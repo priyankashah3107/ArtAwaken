@@ -46,17 +46,17 @@ import { ButtonThree } from './Button';
 
 const MainNav = () => {
   return (
-    <nav className="flex flex-row items-center lg:justify-between p-8 pl-20  lg:pl-20 lg:p-10 cursor-pointer">
+    <nav className="flex flex-row items-center  justify-between p-8 pl-20  lg:pl-20 lg:p-10 cursor-pointer">
       <div className="artawaken flex flex-row font-rubik-wet-paint lg:text-[45px]">
         Art <span> Awaken</span>
       </div>
 
-      <div className="flex flex-row items-center space-x-20 lg:space-x-14 ml-96 lg:ml-0">
+      <div className="flex flex-row items-center ml-60 md:ml-72 lg:ml-80 space-x-20 lg:space-x-14 ">
         <div className="flex flex-row text-[25px] font-normal font-sansita leading-[25px] space-x-14 lg:space-x-14">
           <p className="hidden md:block">Exhibitions</p>
           <p className="hidden md:block">Artist</p>
         </div>
-        <div className="flex flex-row items-center gap-10 lg:gap-14">
+        <div className="flex flex-row items-center gap-6 lg:gap-14">
           <ButtonThree value={"Join Us"}  />
           <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
