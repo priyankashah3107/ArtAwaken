@@ -2,7 +2,9 @@ import React from 'react'
 
 const SclupturesPage = () => {
   return (
-    <div>SclupturesPage</div>
+    <>
+      
+    </>
   )
 }
 

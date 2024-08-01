@@ -31,12 +31,13 @@ export const ButtonTwo: React.FC<ButtonTwoProps> = ({ value }) => {
 
 interface ButtonThreeProps {
   value: string,
+  className?: string
 }
 
 export const ButtonThree: React.FC<ButtonThreeProps> = ({value}) => {
   return (
     <>
-    <button className='btnn'>{value}</button>
+    <button className='btnn lg:text-[22px] font-sansita  lg:font-bold  lg:w-[130px] lg:h-[48px] lg:rounded-[20px] lg:leading-[25px]'>{value}</button>
     </>
   )
 }
