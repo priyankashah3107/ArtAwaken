@@ -5,3 +5,33 @@
    background-color: #f5f5ff;
 }
 
+.year{
+   /* display: flex; */
+   border-radius: 20px;
+ background: #FFF;
+ /* width: 1151px;
+ height: 445px; */
+ /* padding: 45px 112px; */
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+ flex-shrink: 0;
+ }
+ 
+ .yearItem{
+   display: flex;
+ align-items: center;
+ gap: 50px;
+ align-self: stretch;
+ }
+
+ .sclp{
+   color: #3C3C3C;
+text-align: center;
+font-family: "Sansita Swashed";
+/* font-size: 20px; */
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ }

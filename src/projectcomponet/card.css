@@ -70,23 +70,3 @@ font-weight: 500;
 line-height: 100%; /* 12px */
 }
 
-.year{
-  display: flex;
-  border-radius: 30px;
-background: #FFF;
-/* width: 1151px;
-height: 445px; */
-padding: 45px 112px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-}
-
-.yearItem{
-  display: flex;
-align-items: center;
-gap: 50px;
-align-self: stretch;
-}
