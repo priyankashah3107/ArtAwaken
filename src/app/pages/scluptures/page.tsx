@@ -22,6 +22,12 @@ const SclupturesPage = () => {
         <Card img={"/scluptures/gold.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
         <Card img={"/scluptures/sit.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
         </div>
+
+        {/* sclupture of the year */}
+
+        <div>
+          
+        </div>
       
       </div>
     </>

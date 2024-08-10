@@ -40,7 +40,7 @@
 
 // export default MainNav
 
-
+"use client"
 import React from 'react';
 import { ButtonThree } from './Button';
 
