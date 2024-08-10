@@ -48,16 +48,17 @@
 
 
 
-import React, { useState } from 'react';
 
+import React, { useState } from 'react';
+import Link from 'next/link';
 const nav = [
-  { id: 1, name: "Art" },
-  { id: 2, name: "Portraits" },
-  { id: 3, name: "Painting" },
-  { id: 4, name: "Photography" },
-  { id: 5, name: "Sculptures" },
-  { id: 6, name: "Fashion Design" },
-  { id: 7, name: "Digital Art" }
+  { id: 1, name: "Art", href:"/pages/art" },
+  { id: 2, name: "Portraits" , href:"/pages/portraits" },
+  { id: 3, name: "Painting" , href:"/pages/painting"},
+  { id: 4, name: "Photography" , href:"/pages/photography" },
+  { id: 5, name: "Sculptures" , href:"pages/scluptures"},
+  { id: 6, name: "Fashion Design" , href:"/pages/fashion" },
+  { id: 7, name: "Digital Art" , href:"/pages/digital" }
 ];
 
 const Navbar = () => {
@@ -107,9 +108,9 @@ const Navbar = () => {
         </div>
         <nav className="hidden lg:flex lg:flex-row justify-center items-center lg:gap-20">
           {nav.map((item) => (
-            <p key={item.id} className="nav lg:px-2.5">
+            <Link key={item.id} href={item.href} className="nav lg:px-2.5">
               {item.name}
-            </p>
+            </Link>
           ))}
         </nav>
       </div>
@@ -118,7 +119,7 @@ const Navbar = () => {
         <nav className="lg:hidden absolute top-full left-16 w-screen bg-white bg-opacity-20 backdrop-blur-lg shadow-lg border border-white border-opacity-10">
           {nav.map((item) => (
             <div key={item.id} className="p-4 border-b border-white border-opacity-20">
-              <p className="nav">{item.name}</p>
+              <Link className="nav" href={item.href}>{item.name}</Link>
             </div>
           ))}
         </nav>
