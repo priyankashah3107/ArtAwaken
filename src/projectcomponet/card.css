@@ -6,7 +6,7 @@
 
 .card{
   display: flex;
-width: 150px;
+width: 120px;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
@@ -16,7 +16,7 @@ gap: 28px;
 .img{
   height: 150px;
 align-self: stretch;
-border-radius: 30px;
+border-radius: 10px;
 background: lightgray 50%, cover no-repeat;
 }
 
@@ -27,7 +27,7 @@ align-self: stretch;
 
 .heading{
   color: #000;
-font-family: "Sansita Swashed";
+/* font-family: "Sansita Swashed"; */
 font-size: 16px;
 font-style: normal;
 font-weight: 800;
@@ -37,7 +37,7 @@ line-height: 100%; /* 16px */
 .name{
   color: #222;
 font-family: Inter;
-font-size: 10px;
+/* font-size: 10px; */
 font-style: normal;
 font-weight: 500;
 line-height: 100%; /* 10px */
@@ -45,8 +45,8 @@ line-height: 100%; /* 10px */
 
 .cate{
   color: #3C3C3C;
-font-family: "Cormorant Upright";
-font-size: 10px;
+ font-family: "Cormorant Upright";
+/* font-size: 10px; */
 font-style: normal;
 font-weight: 500;
 line-height: normal;
