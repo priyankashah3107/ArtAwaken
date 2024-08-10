@@ -16,10 +16,10 @@ const sclup = [
 const SclupturesPage = () => {
   return (
     <>
-      <div className='ml-10  mr-10 '>
-        {/* <MainNav />
-        <Navbar /> */}
-        <div className='grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-10 md:gap-12 justify-center items-center '>
+      <div className=' '>
+         {/* <MainNav /> */}
+       {/* <Navbar /> */}
+        <div className='ml-10  mr-10  grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-10 md:gap-12 justify-center items-center '>
         <Card img={"/scluptures/lover.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
         <Card img={"/scluptures/shiv.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
         <Card img={"/scluptures/gold.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
