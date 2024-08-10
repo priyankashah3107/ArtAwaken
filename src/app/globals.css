@@ -238,6 +238,10 @@ font-weight: 400;
 line-height: 16px; /* 10px */
 }
 
+.fooP:hover{
+  color: #0038FF;
+}
+
 .fooH{
   color: #000;
 font-family: Inter;

@@ -125,7 +125,7 @@ const artcat = [
 const Footer = () => {
   return (
     <>
-     <footer className=' grid grid-cols-2 lg:grid-cols-4 bg-[#FAF1FA]  p-20 lg:gap-20 mt-32  md:mt-44 '>
+     <footer className=' grid grid-cols-2 lg:grid-cols-4 bg-[#FAF1FA]  p-10 lg:p-20 lg:gap-20 mt-32  md:mt-44 w-full'>
 
       <div className=''>
         {foo1.map((item, idx) => (
@@ -138,7 +138,7 @@ const Footer = () => {
       ))}</div>
 
 
-      <div className='ml-20 md:ml-0 '>
+      <div className='ml-20 lg:ml-0 '>
         <h1 className='fooH md:text-[20px] md:mb-[14px]'>ARTISTS</h1>
         {category.map((val, idx) => (
            <p key={idx} 
@@ -148,15 +148,15 @@ const Footer = () => {
       </div>
 
       <div>
-        <h1 className='fooH md:text-[20px] md:mb-[14px]'>ART CATEGORY</h1>
+        <h1 className='fooH md:text-[20px] mt-10 lg:mt-0 lg:mb-[14px]'>ART CATEGORY</h1>
         {artist.map((val, idx) => (
             
             <p key={idx} className="fooP md:text-[20px] flex flex-col gap-3 md:gap-4  md:leading-normal cursor-pointer ">{val.cat}</p>
         ))}
       </div>
       
-      <div className='ml-20 md:ml-0 mt-10  md:mt-0'>
-        <h1 className='fooH md:text-[20px] md:mb-[14px]'>ART CATEGORY</h1>
+      <div className='ml-20 lg:ml-0 mt-10  lg:mt-0'>
+        <h1 className='fooH md:text-[20px] md:mb-[14px]'>Contact</h1>
         {artcat.map((val, idx) => (
             
               <p key={idx}
