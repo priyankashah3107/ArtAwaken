@@ -47,8 +47,8 @@ import { ButtonThree } from './Button';
 const MainNav = () => {
   return (
     <nav className="flex flex-row items-center  justify-between p-8 pl-20  lg:pl-20 lg:p-10 cursor-pointer">
-      <div className="artawaken flex flex-row font-rubik-wet-paint lg:text-[45px]">
-        Art <span> Awaken</span>
+      <div className="artawaken flex flex-row  font-rubik-wet-paint lg:text-[45px]">
+        Art <span>{" "} Awaken</span>
       </div>
 
       <div className="flex flex-row items-center ml-60 md:ml-72 lg:ml-80 space-x-20 lg:space-x-14 ">
