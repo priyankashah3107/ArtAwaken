@@ -158,10 +158,10 @@ const Footer = () => {
       <div className='ml-20 md:ml-0 mt-10  md:mt-0'>
         <h1 className='fooH md:text-[20px] md:mb-[14px]'>ART CATEGORY</h1>
         {artcat.map((val, idx) => (
-            <div className=''>
+            
               <p key={idx}
             className="fooP flex flex-col gap-3 md:gap-4 md:text-[20px] md:leading-normal cursor-pointer  ">{val.cat}</p>
-            </div>
+        
         ))}
       </div>
      </footer>
