@@ -5,6 +5,7 @@ import MainNav from '@/projectcomponet/MainNav'
 import Navbar from '@/projectcomponet/Navbar'
 import Image from 'next/image'
 import Card from '@/projectcomponet/Card'
+import Footer from '@/projectcomponet/Footer'
 
 const sclup = [
   {id:1 , img: "/scluptures/butt.png"},
@@ -15,10 +16,10 @@ const sclup = [
 const SclupturesPage = () => {
   return (
     <>
-      <div className='ml-10 mr-10 '>
+      <div className='ml-10  mr-10 '>
         {/* <MainNav />
         <Navbar /> */}
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-10 md:gap-12 justify-center items-center '>
+        <div className='grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-10 md:gap-12 justify-center items-center '>
         <Card img={"/scluptures/lover.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
         <Card img={"/scluptures/shiv.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
         <Card img={"/scluptures/gold.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
@@ -43,8 +44,11 @@ const SclupturesPage = () => {
             </div>
            
         </div>
+
+        {/* <Footer /> */}
       
       </div>
+      <Footer />
     </>
   )
 }

@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React from 'react'
 
 const foo1 = [
@@ -71,48 +72,100 @@ const artcat = [
   
 ]
 
-const Footer = () => {
-  return (
-     <>
-     <footer className=' mt-32 pl-60  -mr-96 lg:-mr-0 gap-20 md:pl-64 md:gap-20 lg:p-20 lg:pl-32 grid grid-cols-2 lg:grid-cols-4 lg:gap-20'>
-         <div className='mt-14'>
-          {foo1.map((val, idx) => (
-            <div key={idx} className='flex flex-col gap-6'>
-              <h1 className='fooh font-rubik-wet-paint'>{val.name}</h1>
-              <p className='foop font-cormorant '>{val.desc}</p>
-            </div>
-          ))}
-         </div>
+// const Footer = () => {
+//   return (
+//      <>
+//      <footer className=' mt-32 pl-60  -mr-96 lg:-mr-0 gap-20 md:pl-64 md:gap-20 lg:p-20 lg:pl-32 grid grid-cols-2 lg:grid-cols-4 lg:gap-20'>
+//          <div className='mt-14'>
+//           {foo1.map((val, idx) => (
+//             <div key={idx} className='flex flex-col gap-6'>
+//               <h1 className='fooh font-rubik-wet-paint'>{val.name}</h1>
+//               <p className='foop font-cormorant '>{val.desc}</p>
+//             </div>
+//           ))}
+//          </div>
 
-         <div className='flex flex-col gap-4 mt-16'>
-         <h3 className='art font-inter '>ART CATEGORY</h3>
-          {category.map((val, idx) => (
-            <div key={idx} >
-              <p className=' artd font-cormorant ' >{val.cat}</p>
-            </div>
-          ))}
-         </div>
+//          <div className='flex flex-col gap-4 mt-16'>
+//          <h3 className='art font-inter '>ART CATEGORY</h3>
+//           {category.map((val, idx) => (
+//             <div key={idx} >
+//               <p className=' artd font-cormorant ' >{val.cat}</p>
+//             </div>
+//           ))}
+//          </div>
         
 
-         <div className='flex flex-col gap-4 mt-16'>
-         <h3 className='art font-inter'>ARTISTS</h3>
-          {artist.map((val, idx) => (
-            <div key={idx} >
-              <p className=' artd font-cormorant' >{val.cat}</p>
-            </div>
-          ))}
-         </div>
+//          <div className='flex flex-col gap-4 mt-16'>
+//          <h3 className='art font-inter'>ARTISTS</h3>
+//           {artist.map((val, idx) => (
+//             <div key={idx} >
+//               <p className=' artd font-cormorant' >{val.cat}</p>
+//             </div>
+//           ))}
+//          </div>
 
-         <div className='flex flex-col gap-4 mt-16'>
-         <h3 className='art font-inter'>About Us</h3>
-          {artcat.map((val, idx) => (
-            <div key={idx} >
-              <p className=' artd font-cormorant' >{val.cat}</p>
+//          <div className='flex flex-col gap-4 mt-16'>
+//          <h3 className='art font-inter'>About Us</h3>
+//           {artcat.map((val, idx) => (
+//             <div key={idx} >
+//               <p className=' artd font-cormorant' >{val.cat}</p>
+//             </div>
+//           ))}
+//          </div>
+//      </footer>
+//      </>
+//   )
+// }
+
+// export default Footer
+
+
+
+
+const Footer = () => {
+  return (
+    <>
+     <footer className=' grid grid-cols-2 lg:grid-cols-4 bg-[#FAF1FA]  p-20 lg:gap-20 mt-32  md:mt-44 '>
+
+      <div className=''>
+        {foo1.map((item, idx) => (
+        <div key={idx}  className='flex flex-col gap-3 md:gap-4 '>
+
+          {/* <h1>{item.name}</h1> */}
+          <Image src={"/logo.png"} alt='logo' width={70} height={35} className='md:w-[200px] md:h-[35px]' />
+          <p className='fooP md:text-[25px] md:leading-[28px] '>{item.desc}</p>
+        </div>
+      ))}</div>
+
+
+      <div className='ml-20 md:ml-0 '>
+        <h1 className='fooH md:text-[20px] md:mb-[14px]'>ARTISTS</h1>
+        {category.map((val, idx) => (
+           <p key={idx} 
+           className="fooP flex flex-col gap-3 md:gap-4 md:text-[20px] md:leading-normal cursor-pointer "
+           >{val.cat}</p>
+        ))}
+      </div>
+
+      <div>
+        <h1 className='fooH md:text-[20px] md:mb-[14px]'>ART CATEGORY</h1>
+        {artist.map((val, idx) => (
+            
+            <p key={idx} className="fooP md:text-[20px] flex flex-col gap-3 md:gap-4  md:leading-normal cursor-pointer ">{val.cat}</p>
+        ))}
+      </div>
+      
+      <div className='ml-20 md:ml-0 mt-10  md:mt-0'>
+        <h1 className='fooH md:text-[20px] md:mb-[14px]'>ART CATEGORY</h1>
+        {artcat.map((val, idx) => (
+            <div className=''>
+              <p key={idx}
+            className="fooP flex flex-col gap-3 md:gap-4 md:text-[20px] md:leading-normal cursor-pointer  ">{val.cat}</p>
             </div>
-          ))}
-         </div>
+        ))}
+      </div>
      </footer>
-     </>
+    </>
   )
 }
 
