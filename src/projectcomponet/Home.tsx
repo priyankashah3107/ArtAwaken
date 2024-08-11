@@ -52,7 +52,7 @@ const Home = () => {
               </div>  */}
             <p className='homep mt-2 md:mt-6 md:w-[600px] lg:w-[496px] md:h-[215px]'>At Awaken, we believe that everyone has a unique artistic voice waiting to be discovered. Our platform offers a diverse range of resources, tutorials, and inspiration to help you explore and hone your craft. From stunning galleries to in-depth articles and exclusive workshops, you&apos;ll find everything you need to fuel your creativity.</p>
             {/* <ButtonTwo value={"Explore Now"} /> */}
-            <button className='btnMain -mt-6 md:mt-6 md:rounded-xl md:w-[200px] md:h-[50px] md:text-xl'>Explore Now</button>
+            <button className='btnMain  md:mt-6 md:rounded-xl md:w-[200px] md:h-[50px] md:text-xl'>Explore Now</button>
           </div>
           <div className='hidden lg:block'>
               <HomeCarousel />

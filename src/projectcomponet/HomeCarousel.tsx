@@ -102,19 +102,19 @@ function HomeCarousel() {
       >
         {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
         <div style={{ width: 580, height: 400, borderRight:200 }}>
-        <Image  src={"/home/h1.png"} alt='img' width={200} height={200} className=' size-[200px] lg:w-[580px] lg:h-[540px] rounded-tr-[200px]'/>
+        <Image  src={"/home/h1.png"} alt='img' width={200} height={200} className=' size-[200px] md:w-[580px] md:h-[540px] rounded-tr-[200px]'/>
         </div>
         <div style={{ width: 580, height: 400, borderRight:200  }}>
-        <Image  src={"/home/h2.png"} alt='img' width={200} height={200} className=' size-[200px] lg:w-[580px] lg:h-[540px] rounded-tr-[200px]'/>
+        <Image  src={"/home/h2.png"} alt='img' width={200} height={200} className=' size-[200px] md:w-[580px] md:h-[540px] rounded-tr-[200px]'/>
         </div>
         <div style={{ width: 580, height: 400, borderRight:200 }}>
-        <Image  src={"/home/h3.png"} alt='img' width={200} height={200} className=' size-[200px] lg:w-[580px] lg:h-[540px] rounded-tr-[200px]'/>
+        <Image  src={"/home/h3.png"} alt='img' width={200} height={200} className=' size-[200px]  md:w-[580px] md:h-[540px] rounded-tr-[200px]'/>
         </div>
         <div style={{ width: 580, height: 400, borderRight:200 }}>
-        <Image  src={"/home/h4.png"} alt='img' width={200} height={200} className=' size-[200px] lg:w-[580px] lg:h-[540px] rounded-tr-[200px]'/>
+        <Image  src={"/home/h4.png"} alt='img' width={200} height={200} className=' size-[200px]  md:w-[580px] md:h-[540px] rounded-tr-[200px]'/>
         </div>
         <div style={{width: 580, height: 400, borderRight:200  }}>
-        <Image  src={"/home/h5.png"} alt='img' width={200} height={200} className=' size-[200px] lg:w-[580px] lg:h-[540px] rounded-tr-[200px]'/>
+        <Image  src={"/home/h5.png"} alt='img' width={200} height={200} className=' size-[200px]  md:w-[580px] md:h-[540px] rounded-tr-[200px]'/>
         </div>
           
         
