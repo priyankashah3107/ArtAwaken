@@ -116,7 +116,7 @@ const Navbar = () => {
       </div>
 
       {menuOpen && (
-        <nav className="lg:hidden absolute top-full left-16 w-screen bg-white bg-opacity-20 backdrop-blur-lg shadow-lg border border-white border-opacity-10">
+        <nav className="lg:hidden absolute top-full left-10 w-screen bg-white bg-opacity-20 backdrop-blur-lg shadow-lg border border-white border-opacity-10">
           {nav.map((item) => (
             <div key={item.id} className="p-4 border-b border-white border-opacity-20">
               <Link className="nav" href={item.href}>{item.name}</Link>

@@ -87,7 +87,7 @@ import Image from 'next/image';
 
 const MainNav = () => {
   return (
-    <nav className="flex flex-row items-center  justify-between p-8 pl-14  lg:pl-20 lg:p-10 ">
+    <nav className="flex flex-row items-center  justify-between p-8 pl-4 md:pl-8  lg:pl-20 lg:p-10 ">
       {/* <div className="artawaken flex flex-row  font-rubik-wet-paint lg:text-[45px]">
         Art <span>{" "} Awaken</span>
       </div> */}
