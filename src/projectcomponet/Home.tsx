@@ -54,10 +54,10 @@ const Home = () => {
             {/* <ButtonTwo value={"Explore Now"} /> */}
             <button className='btnMain  md:mt-6 md:rounded-xl md:w-[200px] md:h-[50px] md:text-xl'>Explore Now</button>
           </div>
-          <div className='hidden lg:block'>
-              <HomeCarousel />
-              </div> 
         </div>
+        <div className='hidden lg:block'>
+              <HomeCarousel />
+          </div> 
       </div>
     </>
   )
