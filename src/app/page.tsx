@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className='w-full h-full'>
       <Home />
-      {/* <LatestWork /> */}
+      <LatestWork />
       {/* <FeaturedArtist />
       <PopularWork />
       <Footer /> */}

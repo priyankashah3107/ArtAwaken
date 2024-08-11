@@ -127,37 +127,6 @@ function HomeCarousel() {
         <div style={{width: 580, height: 400, borderRight:200  }}>
         <Image  src={"/home/h5.png"} alt='img' width={200} height={200} className=' size-[200px]  md:w-[580px] md:h-[540px] rounded-tr-[200px]'/>
         </div>
-          
-        
-          {/* <Image src={"/home/h6.png"} alt='img' width={200} height={200} className=' size-[200px] lg:w-[580px] lg:h-[540px] '/> */}
-        
-        {/* <div style={{ width: 300, height: 300, background: '#065535' }}>
-          slide 1
-        </div>
-        <div style={{ width: 300, height: 300, background: '#000000' }}>
-          slide 2
-        </div>
-        <div style={{ width: 300, height: 300, background: '#133337' }}>
-          slide 3
-        </div>
-        <div style={{ width: 300, height: 300, background: '#ffc0cb' }}>
-          slide 4
-        </div>
-        <div style={{ width: 300, height: 300, background: '#ffffff' }}>
-          slide 5
-        </div>
-        <div style={{ width: 300, height: 300, background: '#ffe4e1' }}>
-          slide 6
-        </div>
-        <div style={{ width: 300, height: 300, background: '#008080' }}>
-          slide 7
-        </div>
-        <div style={{ width: 300, height: 300, background: '#ff0000' }}>
-          slide 8
-        </div>
-        <div style={{ width: 300, height: 300, background: '#e6e6fa' }}>
-          slide 9
-        </div> */}
       </ReactSimplyCarousel>
     </div>
   );

@@ -20,15 +20,15 @@ const SclupturesPage = () => {
          {/* <MainNav /> */}
        {/* <Navbar /> */}
         <div className='ml-10  mr-10  grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-10 md:gap-12 justify-center items-center '>
-        <Card img={"/scluptures/lover.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
-        <Card img={"/scluptures/shiv.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
-        <Card img={"/scluptures/gold.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
-        <Card img={"/scluptures/oldman.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
-        <Card img={"/scluptures/man.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
-        <Card img={"/scluptures/art.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
-        <Card img={"/scluptures/nat.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
-        <Card img={"/scluptures/gold.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
-        <Card img={"/scluptures/sit.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}/>
+        <Card img={"/scluptures/lover.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"}  price={"₹ 11k"}/>
+        <Card img={"/scluptures/shiv.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"} price={"₹ 22k"}/>
+        <Card img={"/scluptures/gold.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"} price={"₹ 33k"}/>
+        <Card img={"/scluptures/oldman.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"} price={"₹ 44k"}/>
+        <Card img={"/scluptures/man.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"} price={"₹ 55k"}/>
+        <Card img={"/scluptures/art.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"} price={"₹ 66k"}/>
+        <Card img={"/scluptures/nat.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"} price={"₹ 77k"}/>
+        <Card img={"/scluptures/gold.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"} price={"₹ 88k"}/>
+        <Card img={"/scluptures/sit.png"} title={"Lovers"} name={"Shiv"} btn={"Buy Now"} cate={"Scluptures"} price={"₹ 99k"}/>
         </div>
 
         {/* sclupture of the year */}
