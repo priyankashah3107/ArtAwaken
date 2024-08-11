@@ -41,11 +41,22 @@
 
 
 "use client"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
 import Image from 'next/image';
 function HomeCarousel() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlideIndex(prevIndex => 
+        prevIndex === 4 ? 0 : prevIndex + 1
+      );
+    }, 4000);
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div  className='mr-0 lg:mr-20'>
