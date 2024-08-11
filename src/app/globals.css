@@ -213,23 +213,13 @@ transition: all 0.4s ease; /* Smooth transition */
   transform: translateY(3px); /* Move button down slightly */
 }
 
-/* .fooh{
-  color: #000;
-font-size: 35px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%; /* 35px */
-/* cursor: pointer;
-} */
+.featureBlue{
+  width: 430px;
+height: 377px;
+background: #DCE8FF;
+}
 
-/* .foop{
-  color: #0E0E0E;
-font-size: 20px;
-font-style: normal;
-font-weight: 400; */
-/* line-height: 150%; /* 25px */
-/* cursor: pointer;
-}   */
+
 
 .art{
   color: #000;
