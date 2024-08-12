@@ -11,9 +11,9 @@ const page = () => {
     <div className='w-full h-full'>
       <Home />
       <LatestWork />
-       <FeaturedArtist />
-      { /* <PopularWork />
-      <Footer /> */}
+       {/* <FeaturedArtist /> */}
+      { /* <PopularWork /> */}
+      <Footer /> 
     </div>
   )
 }
