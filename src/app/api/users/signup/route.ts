@@ -94,9 +94,14 @@ export async function POST(request: NextRequest) {
       email,
       password: hashPassword,
     });
-
+          
     // Save the user to the database
-    const savedUser = await newUser.save();
+    // const savedUser = await newUser.save();
+
+    await newUser.save()
+    // Save the user to the database
+    // diselect the password
+    const savedUser = await User.findById(newUser._id).select("-password");
 
     // Send verification email
     await sendEmail({ email, emailType: "VERIFY", userId: savedUser._id });
