@@ -80,15 +80,21 @@ export const sendEmail = async({email, emailType, userId}: SendEmailOptions): Pr
 
         // Update the user record in the database with the appropriate token
         if(emailType === "VERIFY") {
-            await User.findByIdAndUpdate(userId, {
-                verifyToken: hashedToken,  
-                verifyTokenExpiry: Date.now() + 3600000 // Token expires in 1 hour
+            console.log("Verify Section")
+         const updateUser =   await User.findByIdAndUpdate(userId, {
+                $set: {
+                    verifyToken: hashedToken,  
+                    verifyTokenExpiry: Date.now() + 3600000 // Token expires in 1 hour
+                }
             });
+            console.log("Updated User for VERIFY", updateUser)
         } 
         else if(emailType === "RESET") {
             await User.findByIdAndUpdate(userId, {
-                forgotPasswordToken: hashedToken, 
-                forgotPasswordTokenExpiry: Date.now() + 3600000 // Token expires in 1 hour
+                $set: {
+                    forgotPasswordToken: hashedToken, 
+                    forgotPasswordTokenExpiry: Date.now() + 3600000 // Token expires in 1 hour
+                }
             });
         }
 

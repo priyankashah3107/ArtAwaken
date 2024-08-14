@@ -40,10 +40,7 @@ export async function POST(request: NextRequest) {
 
         const token = jwt.sign(tokenData, process.env.TOKEN_SECRET!, {expiresIn: '30d'})
          
-        const response = NextResponse.json({
-            message: "Logged In Success",
-            success: true
-        })
+        const response = NextResponse.json({message: "Logged In Success", success: true}, {status: 200})
 
         response.cookies.set("token", token, {
             httpOnly: true,
