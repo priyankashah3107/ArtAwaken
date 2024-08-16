@@ -279,3 +279,17 @@ font-weight: 600;
 line-height: 100%; /* 16px */
 margin-bottom: 6px;
 }
+
+
+.instyle, .signupBtn{
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: "Inter";
+}
+
+
+.signupBtn{
+  background-color: #000;
+  color: #FFF;
+}

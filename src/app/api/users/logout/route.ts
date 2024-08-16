@@ -32,7 +32,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 connectToMongoDb();
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         // Create the response object
         const response = NextResponse.json({
