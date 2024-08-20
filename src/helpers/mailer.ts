@@ -113,7 +113,7 @@ export const sendEmail = async({email, emailType, userId}: SendEmailOptions): Pr
             from: 'priyanka@universe.ai', // sender address
             to: email, // list of receivers
             subject: emailType === 'VERIFY' ? "Verify your email" : "Reset your password", // Subject line
-            html: `<b> Click <a href="${process.env.DOMAIN}/verifyemail?token=${hashedToken}">here</a> to ${emailType === "VERIFY" ? "verify your email" : "reset your password"} or copy and paste 
+            html: `<b> Click <a href="${process.env.DOMAIN}/pages/verifyemail?token=${hashedToken}">here</a> to ${emailType === "VERIFY" ? "verify your email" : "reset your password"} or copy and paste 
             the link below in your browser <br>  ${process.env.DOMAIN}/verifyemail?token=${hashedToken} </b>`, // html body
         }
 
