@@ -65,10 +65,14 @@ export function middleware(request: NextRequest) {
   if (requiresAuth && !token) {
     return NextResponse.redirect(new URL('/pages/login', request.url));
   }
+
+      //    if(!isPublicPath && !token) {
+      //   return NextResponse.redirect(new URL('/', request.url))
+      //  }
    
-  if(!requiresAuth && !token) {
-    return NextResponse.redirect(new URL('/pages/login', request.url));
-  }
+  // if(!requiresAuth && !token) {
+  //   return NextResponse.redirect(new URL('/pages/login', request.url));
+  // }
 
   // If the user is authenticated and accessing a protected path, allow access
   if (requiresAuth && token) {
@@ -83,8 +87,8 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     '/',
-    // '/pages/login',
-    // '/pages/signup',
+    '/pages/login',
+    '/pages/signup',
     '/pages/buynow',
     '/pages/checkout',
     '/pages/art',
