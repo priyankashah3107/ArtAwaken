@@ -16,8 +16,9 @@ const page = () => {
        {/* <FeaturedArtist /> */}
       { /* <PopularWork /> */}
       <Footer /> 
+      <Toaster />
     </div>
-    <Toaster />
+   
     </>
   )
 }

@@ -4,7 +4,7 @@ const latestwork = [
   { 
     id: 1,
     img: "/latestasset/shiv.png",
-    price: "₹ 20k",
+    price: 200,
     tit: "Shiv Shakti",
     name: "universe",
     category: "Oil",
@@ -13,7 +13,7 @@ const latestwork = [
   { 
     id: 2,
     img: "/latestasset/daisy.png",
-    price: "₹ 20k",
+    price: 300,
     tit: "White Daisy",
     name: "Shiv",
     category: "Watercolor",
@@ -22,7 +22,7 @@ const latestwork = [
   { 
     id: 3,
     img: "/latestasset/gilhari.png",
-    price: "₹ 20k",
+    price: 400,
     tit: "Tired Squirrel",
     name: "Shiva",
     category: "Photograph",
@@ -31,7 +31,7 @@ const latestwork = [
   { 
     id: 4,
     img: "/latestasset/lotus.png",
-    price: "₹ 20k",
+    price: 600,
     tit: "Lotus",
     name: "universe",
     category: "Pastels",
@@ -40,7 +40,7 @@ const latestwork = [
   { 
     id: 5,
     img: "/latestasset/lovers.png",
-    price: "₹ 20k",
+    price: 500,
     tit: "Lovers",
     name: "Unknown",
     category: "Scluptures",
@@ -49,7 +49,7 @@ const latestwork = [
   { 
     id: 6,
     img: "/latestasset/model.png",
-    price: "₹ 20k",
+    price: 800,
     tit: "Birthday Dress",
     name: "Shiva",
     category: "Fashion Design",
@@ -58,7 +58,7 @@ const latestwork = [
   { 
     id: 7,
     img: "/latestasset/girl.png",
-    price: "₹ 20k",
+    price: 900,
     tit: "Women",
     name: "shiva",
     category: "Digital Art",
@@ -67,7 +67,7 @@ const latestwork = [
   { 
     id: 8,
     img: "/latestasset/eye.png",
-    price: "₹ 20k",
+    price: 999,
     tit: "An Eye",
     name: "Max",
     category: "Digital Art",
@@ -76,7 +76,7 @@ const latestwork = [
   { 
     id: 9,
     img: "/latestasset/pri.png",
-    price: "₹ 20k",
+    price: 400,
     tit: "Female",
     name: "shiva",
     category: "Portraits",
@@ -85,7 +85,7 @@ const latestwork = [
   { 
     id: 10,
     img: "/latestasset/dancer.png",
-    price: "₹ 20k",
+    price: 1000,
     tit: "Dance",
     name: "Shiv",
     category: "Pastels",
@@ -94,7 +94,7 @@ const latestwork = [
   { 
     id: 11,
     img: "/latestasset/nature.png",
-    price: "₹ 20k",
+    price: 600,
     tit: "Forest Lake LandScape  ",
     name: "Priyanka",
     category: "Oil",
@@ -103,7 +103,7 @@ const latestwork = [
   { 
     id: 12,
     img: "/latestasset/flower.png",
-    price: "₹ 20k",
+    price: 200,
     tit: "Nature",
     name: "Universe",
     category: "Photograph",

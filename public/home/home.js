@@ -1,4 +1,7 @@
 // public/home.js
+
+
+
 const homeimg = [
   {
     id: 1,

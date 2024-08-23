@@ -68,7 +68,7 @@ const Login: React.FC = () => {
       <div className='w-screen flex h-screen bg-[#E7E7FF]'>
         <div className='flex-1 flex flex-col justify-center items-center text-black'>
           <form className='lg:w-[600px] mx-auto md:mx-20 flex gap-4 flex-col' onSubmit={handleSubmit}>
-            <h1 className='text-4xl font-extrabold text-black'>Sign Up</h1>
+            <h1 className='text-4xl font-extrabold text-black'>Login</h1>
             <div className='flex gap-4 flex-col w-[300px] lg:w-[600px] h-full'>
               
               <label className='input input-bordered rounded flex items-center gap-2'>
