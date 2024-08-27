@@ -36,7 +36,7 @@ export default function FeatureCaro() {
   return (
     <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ">
 
-      <h1 className="text-center mt-20 mb-10 md:mt-32 md:mb-20  text-black text-[35px] font-extrabold font-['Sansita Swashed'] leading-[35px]  md:text-[70px] md:leading-[70px]">Feature Card</h1>
+      <h1 className="text-center mt-20 mb-10 md:mt-32 md:mb-20  text-black text-[35px] font-extrabold font-['Sansita Swashed'] leading-[35px]  md:text-[70px] md:leading-[70px]">Featured Artist</h1>
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex -ml-4 mb-1">
           {featurecard .map((image, index) => (

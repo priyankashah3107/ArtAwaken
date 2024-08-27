@@ -4,7 +4,8 @@ import FeatureCaro from '@/projectcomponet/FeatureCaro'
 import Footer from '@/projectcomponet/Footer'
 import Home from '@/projectcomponet/Home'
 import LatestWork from '@/projectcomponet/LatestWork'
-import { PopularWork } from '@/projectcomponet/PopularWork'
+import PopularWork from '@/projectcomponet/PopularWork'
+
 import React from 'react'
 import { Toaster } from 'react-hot-toast';
 
@@ -16,7 +17,7 @@ const page = () => {
       <LatestWork />
       <FeatureCaro />
        {/* <FeaturedArtist /> */}
-      { /* <PopularWork /> */}
+       <PopularWork /> 
       <Footer /> 
       <Toaster />
     </div>

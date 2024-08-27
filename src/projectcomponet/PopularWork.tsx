@@ -1,57 +1,73 @@
-"use client";
+'use client'
 
-import * as React from "react"
-import populararts from "../../public/popular/popularart.js"
-import featurecard from "../../public/featured/feature.js"
-import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image.js";
+import React, { useState, useEffect, useCallback } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
+import { ChevronLeft, ChevronRight, Circle } from 'lucide-react'
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import Autoplay from "embla-carousel-autoplay"
+import populararts from '../../public/popular/popularart.js'
 
-export function PopularWork() {
+import Link from 'next/Link'
+import { formatCurrency } from '@/utils/formatCurrency'
+
+export default function PopularWork() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
+  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
+  const [nextBtnEnabled, setNextBtnEnabled] = useState(true)
+
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi])
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi])
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return
+    setPrevBtnEnabled(emblaApi.canScrollPrev())
+    setNextBtnEnabled(emblaApi.canScrollNext())
+  }, [emblaApi])
+
+  useEffect(() => {
+    if (!emblaApi) return
+    onSelect()
+    emblaApi.on('select', onSelect)
+  }, [emblaApi, onSelect])
+
   return (
-    <>
-    <h1 className="text-black ml-44 lg:ml-0 w-full text-center text-[45px] lg:text-[70px] font-extrabold leading-tight lg:leading-[70px] mt-24">
-    Popular Work
-      </h1>
-      <Carousel plugins={[Autoplay({delay: 7000})]}
-      className="w-full ml-64 mt-20 md:ml-44 md:mt-20  lg:pl-52 lg:-ml-20 lg:mt-20 ">
-      <CarouselContent className="lg:w-full">
-        {populararts.map((val, index) => (
-          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3 ">
-          <div className="p-2">
-            
-          <div className='relative'>
-              <Image src={val.img} alt="img" width={400} height={300} className=' rounded-lg mb-4 cardimg cursor-pointer h-auto w-auto' />
-              <p className="w-[90px] h-[26px]  py-0.5  bg-gradient-to-r from-white to-white  backdrop-blur-md opacity-70 rounded-xl justify-center items-start gap-2 inline-flex text-[15px] font-normal text-black  mb-2 ml-2 font-inter absolute left-0 bottom-0 ">{val.price}</p>
-              </div>
-            <Card>
-              <CardContent className="flex items-start justify-start p-4">
-                 <div className="flex flex-col gap-3 cursor-pointer">
-                  <h1 className="cardheading">{val.tit}</h1>
-                  <div className="flex flex-row  gap-14">
-                    <p className="cardes font-inter">{val.name}</p>
-                    <div>{val.buy}</div>
-                  </div>
-                  <p className="paintinginfo font-cormorant">{val.category}</p>
-                 </div>
-              </CardContent>
-            </Card>
-          </div>
-        </CarouselItem>
-        ))}
-      </CarouselContent>
+    <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ">
 
-      {/* <CarouselPrevious className=""/>
-      <CarouselNext className="" /> */}
-    </Carousel>
-    </>
+      <h1 className="text-center mt-20 mb-10 md:mt-32 md:mb-20  text-black text-[35px] font-extrabold font-['Sansita Swashed'] leading-[35px]  md:text-[70px] md:leading-[70px]">Popular Artist</h1>
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex -ml-4 mb-1">
+          {populararts.map((image, index) => (
+            <div key={index} className="flex-[0_0_100%]  min-w-0 pl-4 sm:flex-[0_0_50%] md:flex-[0_0_33.33%]">
+              <div className="bg-white rounded-2xl shadow-md overflow-hidden">
+                <img src={image.img} alt={"img"} className="w-full h-64 object-cover " />
+                <div className="p-4 flex flex-col gap-2 mb-1">
+                  <h3 className="text-lg font-semibold">{image.tit}</h3>
+                  <p className="md:text-[15px] text-gray-600 font-inter md:leading-[20px]">{image.name}</p>
+                  <p className="md:text-[15px] text-gray-500 font-cormorant md:leading-[15px]">{image.category}</p>
+                  <div className="mt-2 flex justify-between items-center">
+                    <span className="w-[65px] h-[25px] md:w-[90px] md:h-[26px]  py-0.5  bg-gradient-to-r from-blue-400 to-cyan-400  backdrop-blur-md opacity-70 text-white rounded-xl justify-center items-start gap-2 inline-flex text-[15px] font-normal  mb-2 ml-2 font-inter  cursor-pointer">{formatCurrency(image.price)}</span>
+                    <Link href={"/pages/buynow"}style={{color: 'white'}} className='btnn btnText md:text-[20px]'>Buy Now</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <button
+        className="absolute top-[45%] md:top-[55%] left-4 lg:-left-10 -translate-/80 rounded-full p-2 shadow-md disabled:opacity"
+        onClick={scrollPrev}
+        disabled={!prevBtnEnabled}
+      >
+        <ChevronLeft className="w-6 h-6 " />
+      </button>
+      <button
+        className="absolute  top-[45%]  md:top-[55%] right-4 lg:-right-9 -translate-/80 rounded-full p-2 shadow-md disabled:opacity-50"
+        onClick={scrollNext}
+        disabled={!nextBtnEnabled}
+      >
+        <ChevronRight className="w-6 h-6" />
+      </button>
+
+    </div>
   )
 }
