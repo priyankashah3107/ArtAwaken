@@ -1,9 +1,14 @@
+import MainNav from '@/projectcomponet/MainNav'
 import React from 'react'
 
 export default function BuyNow() {
   return (
     <div>
-      BuyNow Page
+      <MainNav />
+
+      <div>
+        
+      </div>
     </div>
   )
 }

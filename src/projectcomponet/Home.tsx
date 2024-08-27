@@ -41,7 +41,7 @@ const Home = () => {
     <>
       <div>
         <MainNav />
-        <Navbar />
+        <Navbar /> 
 
         <div className='flex flex-col items-center lg:flex-row justify-around'>
           <div className='flex flex-col p-3 lg:ml-10  '>

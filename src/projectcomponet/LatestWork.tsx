@@ -4,6 +4,10 @@ import latestwork from "../../public/latestasset/latest.js";
 import Image from 'next/image';
 import "../projectcomponet/card.css"
 import { formatCurrency } from '@/utils/formatCurrency'
+import Link from 'next/link';
+
+
+
 
 const LatestWork = () => {
   return (
@@ -47,11 +51,11 @@ const LatestWork = () => {
 
 <div className='cardItems cursor-pointer mt-6 pl-4  md:mr-16 '>
   <h1 className='heading md:text-[20px] md:leading-tight'>{val.tit}</h1>
-   <div className='flex flex-col md:flex-row justify-between mt-4'>
-   <h5 className='name text-[10px] md:text-[15px]  md:leading-tight'>{val.name}</h5>
-   <button className='btnn btnText mt-1 mb-1 md:mt-0 md:mb-0'>Buy Now</button>
+   <div className='flex flex-col  lg:flex-row justify-between mt-4'>
+   <h5 className='name text-[10px] md:text-[15px] mb-2 lg:mb-0 md:leading-tight'>{val.name}</h5>
+   <Link href="/pages/buynow" className='btnn btnText mt-1 mb-1 md:mt-0 md:mb-0 md:text-[20px]'>Buy Now</Link>
    </div>
-  <p className='cate text-[10px] md:text-[15px]  md:leading-normal'>{val.category}</p>
+  <p className='cate text-[10px] md:text-[15px] mt-1 lg:mt-0 md:leading-normal'>{val.category}</p>
 </div>
           </div>
         ))}

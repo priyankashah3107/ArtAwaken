@@ -20,6 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en"> 
       <body className={sansita_swashed.className}>
+        {/* <MainNav />
+        <Navbar /> */}
         {children}
         </body>
     </html>

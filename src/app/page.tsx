@@ -1,5 +1,6 @@
 
-import  FeaturedArtist  from '@/projectcomponet/FeaturedArtist'
+import FeatureCaro from '@/projectcomponet/FeatureCaro'
+// import  FeaturedArtist  from '@/projectcomponet/FeaturedArtist'
 import Footer from '@/projectcomponet/Footer'
 import Home from '@/projectcomponet/Home'
 import LatestWork from '@/projectcomponet/LatestWork'
@@ -13,6 +14,7 @@ const page = () => {
     <div className='w-full h-full'>
       <Home />
       <LatestWork />
+      <FeatureCaro />
        {/* <FeaturedArtist /> */}
       { /* <PopularWork /> */}
       <Footer /> 
