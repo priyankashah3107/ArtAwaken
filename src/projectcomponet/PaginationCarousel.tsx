@@ -113,7 +113,7 @@ const PaginationCarousel: React.FC = () => {
         </div>
 
          <div>
-          <button>Buy Now </button>
+          <button className='bg-[#fa83d9] w-[120px] h-[30px] rounded-md text-white text-inter '>Buy Now </button>
          </div>
 
        </div>
