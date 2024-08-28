@@ -1,4 +1,5 @@
 import MainNav from '@/projectcomponet/MainNav'
+import PaginationCarousel from '@/projectcomponet/PaginationCarousel'
 import React from 'react'
 
 export default function BuyNow() {
@@ -7,7 +8,7 @@ export default function BuyNow() {
       <MainNav />
 
       <div>
-        
+        <PaginationCarousel />
       </div>
     </div>
   )
