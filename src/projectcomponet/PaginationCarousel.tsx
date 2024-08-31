@@ -127,27 +127,27 @@ const PaginationCarousel: React.FC = () => {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-[350px] h-[461px] md:w-[400px] md:h-[461px] lg:w-[630px] lg:h-[385px] rounded-2xl bg-center bg-cover duration-500 ml-0 md:ml-0'> </div>
            
-          <div className='flex flex-col ml-8 mt-6'>
+          <div className='flex flex-col ml-8 mt-32 md:mt-2'>
 
           <div className='flex flex-row gap-2'>
-        <Image src="/me.png" alt='profile' width={50} height={50} className='size-[50px] md:size-[80px] rounded-full'  />
-        <h2>Priyanka shah</h2>
+        <Image src="/me.png" alt='profile' width={50} height={50} className='size-[50px] md:size-[50px] rounded-full'  />
+        <h2 className="text-black text-base md:text-xl mt-2  font-semibold font-inter ">Priyanka shah</h2>
         </div> 
 
         <div className='flex flex-row gap-2'>
-        <h2>People Who lived thier Life</h2>
-        <button className='w-[97px] h-[30px]  rounded-full text-center justify-center items-center border-2 border-[#FF00B8]'>Scluptures</button> 
+        <h2 className='people md:text-xl md:font-normal  mt-3 mr-4'>People Who lived thier Life</h2>
+        <button className='sectionToSell w-[97px] h-[30px] md:text-[14px] mb-4 rounded-full text-center justify-center items-center border-2 border-[#FF00B8]'>Scluptures</button> 
         </div>
 
 
         <div className='grid grid-cols-2  '>
          {categories.map((val, idx) => (
-           <p key={idx} className='w-[97px] h-[30px] mt-2 cursor-pointer bg-[#F1E9FF] pt-0.5 font-inter text-[14px] font-medium rounded-full text-center justify-center md:justify-start  items-center md:items-start border-2 border-gray-50'>{val.name}</p>
+           <p key={idx} className='w-[97px] h-[30px]  mt-2 cursor-pointer bg-[#F1E9FF]  font-inter text-[10px] font-medium pt-1 md:font-semibold md:text-[12px] rounded-full text-center justify-center md:justify-start  items-center md:items-start border-2 border-gray-50 md:mt-4 '>{val.name}</p>
          ))}
         </div>
 
         <div>
-          <h1>Share on</h1>
+          <h1 className='shareOn md:text-2xl md:font-semibold mt-10 mb-2'>Share on</h1>
           <div className='flex flex-row gap-4'>
            {links.map((val, idx) => (
             <Image key={idx} src={val.icons} alt='icons' width={25} height={25} className='size-[25px]'/> 
@@ -172,19 +172,19 @@ const PaginationCarousel: React.FC = () => {
         <ChevronRight size={30} onClick={nextSlide} />
       </div>
 
-<div className='hidden lg:flex lg:top-4  md:justify-start lg:ml-0 lg:md:ml-10 lg:mt-0 lg:md:mt-4 lg:gap-3 lg:py-2'>
+<div className='hidden md:flex lg:top-4  md:justify-start md:ml-0 lg:md:ml-10  lg:md:mt-4 lg:gap-3 lg:py-2 md:mt-4 lg:mt-4'>
   {slides.map((slide, slideIndex) => (
     <div
       key={slideIndex}
       onClick={() => PaginationSlide(slideIndex)}
-      className='flex flex-row hover:bg-black rounded-full cursor-pointer'
+      className='flex flex-row hover:bg-black rounded-full cursor-pointer '
     >
       <Circle />
     </div>
   ))}
 </div>
 
-    <div className='mt-10 flex flex-col gap-10 bg-red-200'>
+    <div className='mt-10 flex flex-col gap-10  pl-10 '>
       {description.map((item, idx) => (
         <div key={idx} className='flex flex-col gap-3'>
           <h1 className='buyTitle md:text-[50px] md:font-semibold '>{item.title}</h1>
@@ -200,9 +200,9 @@ const PaginationCarousel: React.FC = () => {
           <div key={idx}>
           <div  className='flex flex-row gap-2'>
           <div>{item.icon}</div>
-        <h4 className='productInfoBuy'>{item.title}</h4>
+        <h4 className='productInfoBuy  md:text-[20px] md:font-semibold'>{item.title}</h4>
         </div>
-        <p className='mt-2 mb-2 productInfoPara'>{item.para}</p>
+        <p className='mt-2 mb-4 ml-2 productInfoPara md:text-[16px] md:font-normal md:ml-10 '>{item.para}</p>
           </div>
         ))}
       </div>
