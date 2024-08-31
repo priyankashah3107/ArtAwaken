@@ -293,3 +293,62 @@ margin-bottom: 6px;
   background-color: #000;
   color: #FFF;
 }
+
+.addtoCartbtn{
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+/* buynow Sections */
+
+.buyTitle{
+  text-align: left;
+font-family: "DM Serif Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.buyPara{
+  text-align: left;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.buyDesc{
+
+  width: 332px;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.productInfoBuy{
+  text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.productInfoPara{
+  /* text-align: center; */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+height: 17px;
+/* align-self: stretch; */
+}

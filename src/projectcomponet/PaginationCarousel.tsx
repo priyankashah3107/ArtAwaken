@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRightCircleIcon, ArrowLeftCircleIcon, Circle, CircleDot, icons, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRightCircleIcon, ArrowLeftCircleIcon, Circle, CircleDot, icons, ChevronLeft, ChevronRight, Check, CheckCircle } from 'lucide-react';
 import React, { useState } from 'react';
 import slides from '../../public/buynow/buy';
 import Image from 'next/image';
@@ -43,6 +43,49 @@ const links = [
      icons: "/icons/facebook.svg"
   }
 ]
+
+const btn = [
+  {
+    id: 1,
+    value: "Buy Now",
+  },
+  {
+    id: 2,
+    value: "Add to cart",
+  },
+  
+]
+
+const description =[
+  {
+    id: 1,
+    title: "Description",
+    para: "Lovers: Made with Limestone",
+    desc: "Eternal Farewell, a poignant sculpture of a deceased man resting in his lover's arms as she tenderly bids him goodbye. This piece captures the serene beauty of love and loss, immortalizing their unbreakable bond."
+  }
+]
+
+const productInfo = [
+  {
+    id: 1,
+    icon: <CheckCircle />,
+    title: "Dimensions",
+    para: "H44 W26 D11 cm."
+  },
+  {
+    id: 2,
+    icon: <CheckCircle />,
+    title: "Style",
+    para: "Classical and traditional"
+  },
+  {
+    id: 3,
+    icon: <CheckCircle />,
+    title: "Framed",
+    para: "No"
+  },
+]
+
 // // Define the type for slide objects
 // interface Slide {
 //   url: string;
@@ -76,13 +119,13 @@ const PaginationCarousel: React.FC = () => {
   };
 
   return (
-    <div className=' bg-green-400 w-full py-16 px-4 relative'>
+    <div className='  w-full py-16 px-4 relative'>
       
 
       <div className='flex flex-col md:flex-row'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-[350px] h-[461px] md:w-[400px] md:h-[461px] lg:w-[630px] lg:h-[385px] rounded-2xl bg-center bg-cover duration-500 ml-4 md:ml-0'> </div>
+        className='w-[350px] h-[461px] md:w-[400px] md:h-[461px] lg:w-[630px] lg:h-[385px] rounded-2xl bg-center bg-cover duration-500 ml-0 md:ml-0'> </div>
            
           <div className='flex flex-col ml-8 mt-6'>
 
@@ -112,8 +155,10 @@ const PaginationCarousel: React.FC = () => {
           </div>
         </div>
 
-         <div>
-          <button className='bg-[#fa83d9] w-[120px] h-[30px] rounded-md text-white text-inter '>Buy Now </button>
+         <div className='flex flex-row gap-4 mt-10'>
+          <button  style={{ boxShadow: '4px 8px 4px 0px #000' }} className='bg-[#fa83d9] w-[120px] h-[30px] rounded-xl text-white text-inter active:shadow-none active:translate-y-[2px] addtoCartbtn'>Buy Now </button>
+          <button  style={{ boxShadow: '4px 8px 4px 0px #000' }} className='bg-[#E4D5FE] w-[120px] h-[30px] rounded-xl text-white text-inter active:shadow-none active:translate-y-[2px] addtoCartbtn '>Add to Cart</button>
+
          </div>
 
        </div>
@@ -138,6 +183,30 @@ const PaginationCarousel: React.FC = () => {
     </div>
   ))}
 </div>
+
+    <div className='mt-10 flex flex-col gap-10 bg-red-200'>
+      {description.map((item, idx) => (
+        <div key={idx} className='flex flex-col gap-3'>
+          <h1 className='buyTitle md:text-[50px] md:font-semibold '>{item.title}</h1>
+          <div className="w-[100px] md:w-[175px] h-[0px] border-2 border-black"></div>
+          <h2 className='buyPara md:text-[40px] md:font-normal '>{item.para}</h2>
+          <p className='buyDesc md:w-[1040px] md:text-2xl md:font-normal'>"{item.desc}</p>
+        </div>
+      ))}
+      
+      
+      <div className='grid grid-cols-2 '>
+        {productInfo.map((item, idx) => (
+          <div key={idx}>
+          <div  className='flex flex-row gap-2'>
+          <div>{item.icon}</div>
+        <h4 className='productInfoBuy'>{item.title}</h4>
+        </div>
+        <p className='mt-2 mb-2 productInfoPara'>{item.para}</p>
+          </div>
+        ))}
+      </div>
+    </div>
 
     </div>
   );
